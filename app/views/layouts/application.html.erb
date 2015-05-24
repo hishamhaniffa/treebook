@@ -11,11 +11,13 @@
 		<div class="container">
 			<a class="navbar-brand" href="#">TreeBook</a>
 			<ul class="nav navbar-nav">
-        		<li class="active"><%= link_to "All Statuses", statuses_path %></li>
-        	</ul>
+				<li class="active"><%= link_to "All Statuses", statuses_path %></li>
+			</ul>
 		</div>
 	</nav>
 	<div class="container">
+		<p class="notice"><%= notice %></p>
+		<p class="alert"><%= alert %></p>
 		<%= yield %>
 	</div>
 </body>
